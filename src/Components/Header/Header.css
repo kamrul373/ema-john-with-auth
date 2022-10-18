@@ -1,0 +1,38 @@
+.header-container {
+    background-color: #1C2B35;
+    padding: 0 100px;
+}
+
+.navbar {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 32px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color .5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #FF9900
+}
+
+li.logout button {
+    background-color: black;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

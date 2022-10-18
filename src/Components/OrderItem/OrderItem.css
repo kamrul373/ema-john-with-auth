@@ -1,0 +1,64 @@
+.order-item-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 3px solid #f7f3f3;
+    border-radius: 10px;
+}
+
+.order-container img {
+    width: 91px;
+    height: 91px;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.order-details p {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+p.title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+span.price,
+small.quanity {
+    color: #FF9900;
+    font-weight: 500;
+}
+
+/* delete icon */
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container button {
+    background-color: #F9CDCD;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    background-color: rgba(235, 87, 87, 0.5);
+}
+
+.deleteicon {
+    color: #EB5757;
+    font-size: 31px;
+
+}

@@ -11,7 +11,7 @@ const Orders = () => {
 
     // delete button handler
     const handleDeleteCartItem = (id) => {
-        const newCart = cart.filter(item => item.id !== id);
+        const newCart = cart.filter(item => item._id !== id);
         setCart(newCart);
         // removing from localstorage
         removeCartItem(id);
@@ -28,7 +28,7 @@ const Orders = () => {
                 <div className="order-container">
                     {
                         cart.map(product => <OrderItem
-                            key={product.id}
+                            key={product._id}
                             product={product}
                             handleDeleteCartItem={handleDeleteCartItem}
                         ></OrderItem>)

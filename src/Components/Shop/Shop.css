@@ -14,3 +14,20 @@
     background-color: #FFE0B3;
 
 }
+
+.pagination-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination-container button,
+select {
+    padding: 15px;
+    margin: 20px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagination-container button.active {
+    background-color: #FFE0B3;
+}

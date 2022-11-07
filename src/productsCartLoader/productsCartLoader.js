@@ -2,8 +2,8 @@ import { getStoreCart } from "../utilities/local";
 
 const productsCartLoader = async () => {
     // getting products
-    const productsData = await fetch("products.json");
-    const products = await productsData.json();
+    const productsData = await fetch("http://localhost:5000/products");
+    const { products } = await productsData.json();
 
     // getting cart
     const getCart = getStoreCart();
@@ -12,7 +12,7 @@ const productsCartLoader = async () => {
 
     // processing products data
     for (const id in getCart) {
-        const addedProduct = products.find(product => product.id === id);
+        const addedProduct = products.find(product => product._id === id);
         if (addedProduct) {
             const quantity = getCart[id];
             addedProduct["quantity"] = quantity;
